@@ -19,15 +19,39 @@ A Flutter plugin to convert hex string values into `Color` objects—supporting 
 
 Add this to your `pubspec.yaml`:
 
-## 🚀 Usage
-
-import 'package:hex_color_plus/hex_color_plus.dart';
-
-Color basic = HexColor.hexToColor("#FFAA88");       // RRGGBB
-Color withAlpha = HexColor.hexToColor("#88FFAA00"); // AARRGGBB (ARGB with transparency)
-
-
 ```yaml
 dependencies:
   hex_color_plus: ^1.0.0
 
+
+```
+
+## 🚀 Usage
+
+
+```import 'package:hex_color_plus/hex_color_plus.dart';
+
+void main() {
+  // Convert standard 6-digit hex (RRGGBB)
+  Color basic = HexColor.hexToColor("#FFAA88");
+
+  // Convert extended 8-digit hex (AARRGGBB with transparency)
+  Color withAlpha = HexColor.hexToColor("#88FFAA00");
+
+  print(basic);        // Output: Instance of Color
+  print(withAlpha);    // Output: Instance of Color with transparency
+}
+
+```
+
+
+## ✅ Supported formats:
+
+#RRGGBB → basic opaque colors
+
+#AARRGGBB → colors with alpha transparency
+
+---
+
+### 📜 License
+This plugin is licensed under the MIT License.
