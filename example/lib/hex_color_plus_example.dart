@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:hex_to_color/hex_color.dart';
+import 'package:hex_to_color_plus/hex_color.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
