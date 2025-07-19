@@ -28,21 +28,22 @@ dependencies:
 
 ## 🚀 Usage
 
+Import and use in your Dart code:
 
-```import 'package:hex_color_plus/hex_color_plus.dart';
+```dart
+import 'package:hex_color_plus/hex_color_plus.dart';
 
 void main() {
   // Convert standard 6-digit hex (RRGGBB)
   Color basic = HexColor.hexToColor("#FFAA88");
 
-  // Convert extended 8-digit hex (AARRGGBB with transparency)
+  // Convert extended 8-digit hex with alpha (AARRGGBB)
   Color withAlpha = HexColor.hexToColor("#88FFAA00");
 
-  print(basic);        // Output: Instance of Color
-  print(withAlpha);    // Output: Instance of Color with transparency
+  print(basic);
+  print(withAlpha);
 }
 
-```
 
 
 ## ✅ Supported formats:
